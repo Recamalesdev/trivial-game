@@ -4,7 +4,7 @@ let puntuaje = 0;       // Contador de respuestas correctas
 let opcionesBarajadas = [];          // Guardará las opciones mezcladas para cada pregunta
 let indiceCorrectoActual = 0;        // Guardará el índice correcto después de mezclar
 
-// 👇 Función para mezclar opciones y detectar el nuevo índice correcto
+//  Función para mezclar opciones y detectar el nuevo índice correcto
 function barajarOpciones(opcionesOriginales, indiceCorrecta) {
   // Asociamos cada opción con si es la correcta o no
   const opcionesConIndice = opcionesOriginales.map((opcion, i) => ({
@@ -25,7 +25,7 @@ function barajarOpciones(opcionesOriginales, indiceCorrecta) {
   return opcionesConIndice.map(op => op.texto);
 }
 
-// 👇 Función que muestra una pregunta y sus 4 opciones barajadas
+//  Función que muestra una pregunta y sus 4 opciones barajadas
 function mostrarPregunta() {
   if (preguntaActual < preguntas.length) {
     // Mostrar el texto de la pregunta
@@ -53,8 +53,17 @@ function mostrarPregunta() {
   }
 }
 
-// 👇 Función que se ejecuta al hacer clic en una respuesta
+//  Función que se ejecuta al hacer clic en una respuesta
 function seleccionarRespuesta(indiceElegido) {
+
+  // Animaciín de pulaado
+  document.getElementById(`opcion${indiceElegido}`).classList.add("boton-pulsado");
+
+  // Eliminar la clase de animación después de que termine (para que se pueda volver a animar)
+  setTimeout(() => {
+    document.getElementById(`opcion${indiceElegido}`).classList.remove("boton-pulsado");
+  }, 300);
+
   // Comparar con el índice correcto actualizado
   if (indiceElegido === indiceCorrectoActual) {
     document.getElementById("resultado").innerHTML = "✅ ¡Correcto!";
@@ -83,7 +92,7 @@ function seleccionarRespuesta(indiceElegido) {
   }, 5000);
 }
 
-// 👇 Función para mostrar el mensaje final del juego
+//  Función para mostrar el mensaje final del juego
 function mostrarResultadoFinal() {
   document.getElementById("pregunta").innerText = "🎉 Juego terminado";
   document.getElementById("opciones").innerHTML = ""; // Ocultar botones
@@ -93,8 +102,8 @@ function mostrarResultadoFinal() {
     `Obtuviste ${puntuaje} de ${preguntas.length} respuestas correctas.<br>` +
     "¡Gracias por jugar!<br>" +
     "¡Hasta la próxima!" +
-    "<br><br><em>Programado con 💚 por Bernardo – comparte y aprende.</em>";
+    "<br><br><em>Programado con 💚 por Bernardo – comparte y aprende 🚀.</em>";
 }
 
-// 👇 Iniciar el juego al cargar la página
+
 mostrarPregunta();
