@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Logo arriba centrado -->
+    <div class="logo-container">
+      <img src="img/logo-trivia.png" alt="Trivia Game Logo" id="logoTrivia" />
+    </div>
+
+    <!-- Título del juego -->
+    <h1>Trivia Game</h1>
+
+    <!-- Pregunta -->
+    <h2 id="pregunta"></h2>
+
+    <!-- Botones de respuesta -->
+    <div id="opciones">
+      <button onclick="seleccionarRespuesta(0)" id="opcion0"></button>
+      <button onclick="seleccionarRespuesta(1)" id="opcion1"></button>
+      <button onclick="seleccionarRespuesta(2)" id="opcion2"></button>
+      <button onclick="seleccionarRespuesta(3)" id="opcion3"></button>
+    </div>
+
+    <!-- Resultado -->
+    <p id="resultado"></p>
+
+    <!-- Pie de firma -->
+    <footer style="margin-top: 40px; font-size: 0.9rem; color: #ccc;">
+      Creado por <strong>Recamalesdev</strong> © 2025
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="preguntas.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
