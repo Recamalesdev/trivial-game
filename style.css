@@ -10,9 +10,28 @@ body {
     align-items: start; /* No centramos vertical para evitar problemas en móvil */
     min-height: 100vh;
 }
+
+#menu-secciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(0, 255, 251);
+}
   
 /* Contenedor principal */
 .container {
+    display: none; /* Ocultamos inicialmente */
     background: white;
     padding: 40px 30px;
     border-radius: 12px;
@@ -82,6 +101,23 @@ body {
     border: 2px solid #fff;
     color: white;
 }
+
+.boton-reiniciar {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.boton-reiniciar:hover {
+    background-color: #0056b3;
+}
+  
   
   
 
@@ -120,3 +156,19 @@ footer {
 .boton-pulsado {
     animation: pulsarBoton 0.3s ease;
 }
+
+@keyframes aparecerSuave {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+.animacion-aparecer {
+    animation: aparecerSuave 0.5s ease forwards;
+}
+  
