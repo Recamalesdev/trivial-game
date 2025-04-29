@@ -1,5 +1,5 @@
 // Preguntas de Ciencias 
-const preguntas = [
+const preguntasCiencias = [
     "¿Qué es una función?",
     "¿Qué diferencia hay entre variable independiente y dependiente?",
     "¿Qué es el dominio y el recorrido de una función?",
@@ -22,7 +22,7 @@ const preguntas = [
     "¿Para qué sirven los diagramas de flujo?"
  ];
  
- const opciones = [
+ const opcionesCiencias = [
      [
        "Es una relación donde a cada valor de x le corresponde un único valor de y.",
        "Es una operación matemática que siempre da como resultado cero.",
@@ -145,7 +145,7 @@ const preguntas = [
        ]
    ];
    
-   const respuestasCorrectas = [
+   const respuestasCiencias = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0
   ]; // índice correcto

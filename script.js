@@ -1,8 +1,15 @@
+let preguntas = [];
+let opciones = [];
+let respuestasCorrectas = [];
+
 let preguntaActual = 0; // Índice de la pregunta que se está mostrando
 let puntuaje = 0;       // Contador de respuestas correctas
 
 let opcionesBarajadas = [];          // Guardará las opciones mezcladas para cada pregunta
 let indiceCorrectoActual = 0;        // Guardará el índice correcto después de mezclar
+
+
+
 
 //  Función para mezclar opciones y detectar el nuevo índice correcto
 function barajarOpciones(opcionesOriginales, indiceCorrecta) {
@@ -160,4 +167,4 @@ function volverAlMenu() {
 }
 
 
-mostrarPregunta();
+//mostrarPregunta();
