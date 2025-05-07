@@ -1,28 +1,63 @@
 // Preguntas de Ciencias 
 const preguntasCiencias = [
-    "¿Qué es una función?",
-    "¿Qué diferencia hay entre variable independiente y dependiente?",
-    "¿Qué es el dominio y el recorrido de una función?",
-    "¿Cómo es la ecuación de una función lineal?",
-    "¿Qué indica la pendiente de una recta?",
-    "¿Qué es la energía y cómo se mide?",
-    "¿Qué diferencia hay entre energía cinética y potencial?",
-    "¿Qué es la potencia?",
-    "¿Qué es el rendimiento energético?",
-    "¿Qué es el calor específico?",
-    "¿Qué es la carga eléctrica y cuál es su unidad?",
-    "¿Qué es la corriente eléctrica?",
-    "¿Qué es el voltaje o tensión eléctrica?",
-    "¿Qué dice la Ley de Ohm?",
-    "¿Qué tipos de materiales existen respecto a la electricidad?",
-    "¿Qué es el pensamiento computacional?",
-    "¿Cuáles son las herramientas principales del pensamiento computacional?",
-    "¿Qué es un algoritmo?",
-    "¿Cómo se puede expresar un algoritmo?",
-    "¿Para qué sirven los diagramas de flujo?"
+  "¿Qué es un polígono y cuáles son sus elementos principales?",
+  "Define la diferencia entre un polígono convexo y uno cóncavo.",
+  "¿Cuáles son los elementos principales de un poliedro?",
+  "¿Qué describe la fórmula de Euler en el contexto de los poliedros?",
+  "Explica la diferencia entre una circunferencia y un círculo.",
+  "¿Qué es una función?",
+  "¿Qué diferencia hay entre variable independiente y dependiente?",
+  "¿Qué es el dominio y el recorrido de una función?",
+  "¿Cómo es la ecuación de una función lineal?",
+  "¿Qué indica la pendiente de una recta?",
+  "¿Qué es la energía y cómo se mide?",
+  "¿Qué diferencia hay entre energía cinética y potencial?",
+  "¿Qué es la potencia?",
+  "¿Qué es el rendimiento energético?",
+  "¿Qué es el calor específico?",
+  "¿Qué es la carga eléctrica y cuál es su unidad?",
+  "¿Qué es la corriente eléctrica?",
+  "¿Qué es el voltaje o tensión eléctrica?",
+  "¿Qué dice la Ley de Ohm?",
+  "¿Qué tipos de materiales existen respecto a la electricidad?",
+  "¿Qué es el pensamiento computacional?",
+  "¿Cuáles son las herramientas principales del pensamiento computacional?",
+  "¿Qué es un algoritmo?",
+  "¿Cómo se puede expresar un algoritmo?",
+  "¿Para qué sirven los diagramas de flujo?"
  ];
  
  const opcionesCiencias = [
+  [
+    "Es una figura cerrada con lados rectos. Tiene lados, vértices y ángulos.",
+    "Es una línea infinita sin principio ni fin.",
+    "Es una figura con curvas y sin ángulos.",
+    "Es una forma abierta sin conexión entre los lados."
+  ],
+  [
+    "Convexo: todos sus ángulos interiores son menores de 180°. Cóncavo: al menos un ángulo interior es mayor de 180°.",
+    "Convexo: lados curvos. Cóncavo: lados rectos.",
+    "Convexo: tiene vértices. Cóncavo: no tiene vértices.",
+    "Convexo: está cerrado. Cóncavo: está abierto."
+  ],
+  [
+    "Caras, aristas y vértices.",
+    "Ángulos, radios y lados.",
+    "Diámetro, altura y base.",
+    "Ejes, líneas y puntos medios."
+  ],
+  [
+    "La suma del número de caras más vértices es igual al número de aristas más dos: C + V = A + 2.",
+    "C + A = V - 2.",
+    "V + A = C - 2.",
+    "C + A = V + 3."
+  ],
+  [
+    "Circunferencia: línea curva cerrada. Círculo: región interior delimitada por la circunferencia.",
+    "Circunferencia: área dentro de un triángulo. Círculo: el borde del triángulo.",
+    "Circunferencia: parte interior. Círculo: parte exterior.",
+    "Circunferencia y círculo son exactamente lo mismo."
+  ],
      [
        "Es una relación donde a cada valor de x le corresponde un único valor de y.",
        "Es una operación matemática que siempre da como resultado cero.",
@@ -147,5 +182,5 @@ const preguntasCiencias = [
    
    const respuestasCiencias = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0,0,0
   ]; // índice correcto
